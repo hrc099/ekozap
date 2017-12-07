@@ -1,0 +1,78 @@
+/*Imports*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin-ext')
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&subset=latin-ext')
+
+/* Variables */
+
+$primary-color: #0B6623
+$secondary-color: #FFF
+$grey: #212922
+$primary-text: #212922
+$primary-gutter: 15px
+$font-body: 'Montserrat', sans-serif
+$font-heading: 'Open Sans', sans-serif
+
+/*Style*/
+
+body
+	font-family: $font-body
+	font-size: 20px
+	background: #secondary-color
+	color: $grey
+	line-height: 1.5
+header, footer, h1, h2, h3, h4, h5, h6
+	font-family: $font-heading
+h1
+	margin: $primary-gutter 0px $primary-gutter 0px
+a
+	color: $grey
+	text-decoration: underline
+	transition: color 0.3s ease
+a:hover
+	color: $primary-color
+	text-decoration: underline
+a:focus
+	color: $secondary-color
+	text-decoration: none
+header, footer
+	background: $primary-color
+	font-size: 18px
+
+	a
+		text-decoration: none
+		color: $secondary-color
+	a:hover
+		text-decoration: none
+		color: $grey
+main
+	animation: 0.4s ease-out 0s 1 introAnim
+	padding-top: $primary-gutter
+	padding-bottom: $primary-gutter
+
+	> *
+		position: relative
+	h1
+		color: $primary-color
+		margin-bottom: $primary-gutter
+		padding-left: 0
+button
+	border: 0px
+.img
+	background-repeat: no-repeat
+	max-width: 100%
+	min-height: 500px
+
+@media only screen and (max-width: 768px)
+	body
+		font-size: 16px
+	.row
+		flex-wrap: wrap
+	img, .img
+		display: none
+
+@keyframes introAnim
+	0%
+		opacity: 0
+	100%
+		opacity: 1

@@ -1,0 +1,45 @@
+/*Imports */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&subset=latin-ext");
+/* Variables */
+/*Style */
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  background: #0B6623;
+  color: #FFF;
+  line-height: 1.5; }
+
+header, footer, h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", sans-serif; }
+
+h1 {
+  margin: 15px 0px 15px 0px; }
+
+a {
+  color: #FFF;
+  text-decoration: underline; }
+
+a:hover {
+  color: #EDEDED;
+  text-decoration: underline; }
+
+a:focus {
+  color: #EDEDED;
+  text-decoration: none; }
+
+header a, footer a {
+  text-decoration: none; }
+header a:hover, footer a:hover {
+  text-decoration: none; }
+
+main > * {
+  position: relative; }
+main .row > h1 {
+  margin-bottom: 30px;
+  padding-left: 15px; }
+
+p span {
+  margin: 0px 0px 15px 0px; }
+
+/*# sourceMappingURL=kontakti.css.map */

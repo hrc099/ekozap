@@ -1,0 +1,99 @@
+@charset "UTF-8";
+/*Imports */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&subset=latin-ext");
+/* Variables */
+/*Style */
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  background: #secondary-color;
+  color: #212922;
+  line-height: 1.5; }
+
+header, footer, h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", sans-serif; }
+
+h1 {
+  margin: 15px 0px 15px 0px; }
+
+a {
+  color: #212922;
+  text-decoration: underline;
+  transition: color 0.3s ease; }
+
+a:hover {
+  color: #0B6623;
+  text-decoration: underline; }
+
+a:focus {
+  color: #FFF;
+  text-decoration: none; }
+
+header, footer {
+  background: #0B6623;
+  font-size: 18px; }
+  header a, footer a {
+    text-decoration: none;
+    color: #FFF; }
+  header a:hover, footer a:hover {
+    text-decoration: none;
+    color: #212922; }
+
+main {
+  animation: 0.4s ease-out 0s 1 introAnim;
+  padding-top: 15px;
+  padding-bottom: 15px; }
+  main > * {
+    position: relative; }
+  main h1 {
+    color: #0B6623;
+    margin-bottom: 15px;
+    padding-left: 0; }
+
+button {
+  border: 0px; }
+
+.img {
+  background-repeat: no-repeat;
+  max-width: 100%;
+  min-height: 500px; }
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 16px; }
+
+  .row {
+    flex-wrap: wrap; }
+
+  img, .img {
+    display: none; } }
+@keyframes introAnim {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+.icon-plant-on-a-hand:before {
+  content: ""; }
+
+.icon-chevron-thin-down:before {
+  content: ""; }
+
+.test {
+  min-height: 100%;
+  margin-top: 72px;
+  margin-bottom: 15px; }
+  .test .row {
+    display: flex;
+    align-items: center; }
+  .test h1 {
+    color: #0B6623; }
+  .test .col > h1:first-child {
+    margin-top: 0; }
+
+.test-img {
+  background: url("../img/leaf-945399_1920.jpg");
+  background-position: center center;
+  background-size: cover; }
+
+/*# sourceMappingURL=index.css.map */

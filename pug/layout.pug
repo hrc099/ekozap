@@ -1,0 +1,43 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="../css/normalize.css")
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous")
+    link(rel="stylesheet" href="../icomoon/style.css")
+    link(rel="stylesheet" href="../css/master.css")
+    title Eko Zaprešić
+  body
+    header
+        nav
+            .container
+                .navbar-header
+                    button(type='button' data-toggle='collapse' data-target='#navbar-collapse-1').navbar-toggle.collapsed
+                        span.sr-only Izbornik
+                        span.icon-bar
+                        span.icon-bar
+                        span.icon-bar
+                .collapse.navbar-collapse#navbar-collapse-1
+                    ul
+                        li
+                            a(href='index.html') Eko Zaprešić
+                        li
+                            a(href='zastita.html') Zaštita okoliša
+                        li
+                            a(href='projekti.html') Projekti
+                        li
+                            a(href='onama.html') O udruzi
+                        li
+                            a(href='kontakt.html') Kontakt
+    block content
+    footer
+        .container
+            a(href='index.html') Eko Zaprešić
+            br
+            a(href='mailto:eko@eko-zapresic.hr') eko@eko-zapresic.hr
+            br
+            a(target='_blank' href='http://www.udruga-ivancica.hr') Udruga Ivančica
+    script(src="../js/jquery-3.2.1.min.js")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous")
+    script(src="../js/index.js")

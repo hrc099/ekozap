@@ -1,0 +1,40 @@
+@import style
+
+header
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	z-index: 2
+
+	.container
+		padding: 0
+	ul
+		list-style-type: none
+		margin: 0
+		padding: 0
+
+		li:first-child a
+			padding-left: 0
+	li
+		float: left
+	a
+		display: block
+		padding: $primary-gutter
+
+	.icon-bar
+		background-color: $secondary-color
+footer
+	position: relative
+
+	.container > *
+		display: inline-block
+		margin: 0px 0px $primary-gutter 0px
+	.container > *:first-child
+		margin: $primary-gutter 0px
+
+@media only screen and (max-width: 768px)
+	header
+		ul
+			li:first-child a
+				padding-left: $primary-gutter !important

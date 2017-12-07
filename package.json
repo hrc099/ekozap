@@ -1,0 +1,16 @@
+{
+  "name": "ekozap",
+  "version": "1.0.0",
+  "description": "Eko Zaprešić web",
+  "main": "index.js",
+  "dependencies": {
+  	"pug": "^2.0.0-rc.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "htmlrender": "pug pug --out html",
+    "preprocess": "sass --update sass:css"
+  },
+  "author": "Hrvoje Husnjak",
+  "license": "ISC"
+}
